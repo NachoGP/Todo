@@ -1,0 +1,11 @@
+<header class="header">
+    <div>
+        <h1>Daily Notes</h1>
+        <h2>Notas de recordatorio</h2>
+    </div>
+    <input class="new-todo"
+           placeholder="Nueva tarea..."
+           [formControl]="txtInput"
+           (keyup.enter)="agregar()"
+           autofocus>
+</header>
